@@ -67,7 +67,7 @@ export default function Home () {
 			href="#"
 			onClick={() => handleAlert("Em Breve Lançaremos nosso Catálogo, enquanto isso você pode me contatar para tirar dúvidas sobre o Vade ou outros assuntos 😉")}>
 				<button>
-					📚 Acesse Nosso Catálogo e Garanta o seu Material de Estudos
+					📚 Garanta o seu Material de Estudos
 				</button>
 			</a>
 
@@ -92,3 +92,4 @@ export default function Home () {
 		</div>
 	);
 }
+
