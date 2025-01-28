@@ -82,11 +82,11 @@ export default function Home () {
 		</div>
 
 		{/* Rodapé */}
-		<footer className="text-black text-[8px] mt-6">
+		<footer className="text-black text-[17px] mt-6">
 			© {currentYear} Vade Estudos. Todos os direitos reservados.
 		</footer>
 
-		<div className="text-black text-[8px] mt-1 font-bold">
+		<div className="text-black text-[14px] mt-1 font-bold">
 			Desenvolvido Com ❤️ por <a href="https://www.instagram.com/lucas.dev.exe/" className="text-black no-underline hover:underline">Lucas</a>
 		</div>
 		</div>
