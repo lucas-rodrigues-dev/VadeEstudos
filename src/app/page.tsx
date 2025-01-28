@@ -64,7 +64,7 @@ export default function Home () {
 
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
-			href="#"
+			href=""
 			target="_blank"
 			onClick={() => handleAlert("Em Breve Lançaremos nosso Catálogo, enquanto isso você pode me contatar para tirar dúvidas sobre o Vade ou outros assuntos 😉")}>
 				<button>
