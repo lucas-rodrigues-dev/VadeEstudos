@@ -34,6 +34,7 @@ export default function Home () {
 			<a
 				href="https://www.instagram.com/vade.estudos/"
 				className="text-black no-underline hover:underline"
+				rel="noreferrer noopener"
 			>
 				@vade.estudos
 			</a>
@@ -56,6 +57,7 @@ export default function Home () {
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
 			href="https://w.app/hdmsfy"
+			rel="noreferrer noopener"
 			target="_blank">
 				<button>
 					👋🏻 Entre em Contato Comigo
@@ -65,6 +67,7 @@ export default function Home () {
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
 			href="#"
+			rel="noreferrer noopener"
 			onClick={() => handleAlert("Em Breve Lançaremos nosso Catálogo, enquanto isso você pode me contatar para tirar dúvidas sobre o Vade ou outros assuntos 😉")}>
 				<button>
 					📚 Garanta o seu Material de Estudos
@@ -74,7 +77,8 @@ export default function Home () {
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"  
 			href="https://www.linkedin.com/in/mabe-carvalho2210/"
-			target="_blank">
+			target="_blank"
+			rel="noreferrer noopener">
 				<button>
 					💻 Me siga no LinkedIn
 				</button>
@@ -82,7 +86,7 @@ export default function Home () {
 		</div>
 
 		{/* Rodapé */}
-		<footer className="text-black text-[17px] mt-6">
+		<footer className="text-black text-[16px] mt-6">
 			© {currentYear} Vade Estudos. Todos os direitos reservados.
 		</footer>
 
