@@ -1,19 +1,8 @@
 "use client";
 import Image from "next/image";
-import Swal from "sweetalert2";
 
 export default function Home () {
 		const currentYear = new Date().getFullYear();
-
-		const handleAlert = (message: string) => {
-			Swal.fire({
-				title: "Aguarde!",
-				text: message,
-				icon: "info",
-				confirmButtonText: "Entendi",
-				confirmButtonColor: "#8b1c41",
-			});
-		};
 
 	return (
 		<div className="min-h-screen bg-gradient-to-r from-[#fff0ec] to-[#e6bab6] flex flex-col items-center text-center font-sans">
@@ -66,9 +55,9 @@ export default function Home () {
 
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
-			href="#"
+			href="https://vade-estudos-store.vercel.app/"
 			rel="noreferrer noopener"
-			onClick={() => handleAlert("Em Breve Lançaremos nosso Catálogo, enquanto isso você pode me contatar para tirar dúvidas sobre o Vade ou outros assuntos 😉")}>
+			target="_blank">
 				<button>
 					📚 Garanta o seu Material de Estudos
 				</button>
@@ -91,7 +80,23 @@ export default function Home () {
 		</footer>
 
 		<div className="text-black text-[14px] mt-1 font-bold">
-			Desenvolvido Com ❤️ por <a href="https://www.instagram.com/lucas.dev.exe/" className="text-black no-underline hover:underline">Lucas</a>
+		Desenvolvido com <a 
+		href="https://nextjs.org/"
+		rel="noreferrer noopener"
+		target="_blank"
+		>
+			<Image
+				className="inline-block space-x-1 md:space-x-9"
+				src="/nextjs-logo.svg"
+				alt="NextJS Logo"
+				width={20}
+				height={10}
+			/> por
+			</a>
+			<a 
+			className="text-black no-underline hover:underline" 
+			href="https://www.instagram.com/lucas.dev.exe/" 
+			rel="noreferrer noopener"> Lucas</a>
 		</div>
 		</div>
 	);
