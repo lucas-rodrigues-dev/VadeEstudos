@@ -45,7 +45,7 @@ export default function Home () {
 		<div className="w-full flex flex-col items-center">
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
-			href="https://w.app/hdmsfy"
+			href="https://api.whatsapp.com/send?phone=5561981576620&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20linktree%20e%20tenho%20interesse%20em%20seus%20produtos"
 			rel="noreferrer noopener"
 			target="_blank">
 				<button>
