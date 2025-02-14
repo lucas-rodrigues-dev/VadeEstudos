@@ -109,9 +109,8 @@ export default function Home () {
 			/> por
 			</a>
 			<a 
-			className="text-black no-underline hover:underline" 
-			href="https://www.instagram.com/lucas.dev.exe/" 
-			rel="noreferrer noopener"> Lucas</a>
+			onClick = {() => window.open('https://www.instagram.com/lucas.dev.exe/', '_blank', 'noreferrer noopener')}
+			className="text-black no-underline hover:underline cursor-pointer"> Lucas</a>
 		</div>
 		</div>
 	);
