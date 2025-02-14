@@ -101,7 +101,7 @@ export default function Home () {
 		Desenvolvido com <a
 		onClick = {() => window.open('https://nextjs.org/', '_blank', 'noreferrer noopener')}>
 			<Image
-				className="inline-block space-x-1 md:space-x-9"
+				className="inline-block space-x-1 md:space-x-9 cursor-pointer"
 				src="/nextjs-logo.svg"
 				alt="NextJS Logo"
 				width={20}
