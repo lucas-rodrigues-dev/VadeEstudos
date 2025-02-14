@@ -1,8 +1,20 @@
 "use client";
 import Image from "next/image";
+import Swal from 'sweetalert2';
+
 
 export default function Home () {
 		const currentYear = new Date().getFullYear();
+
+		// Sweet Alert
+		const showAlert = () => {
+			Swal.fire({
+				title: "👋 Olá Estudante",
+				text: "Obrigado pelo seu interesse em nossos produtos, mas, nossa loja ainda não esta pronta...Quando estiver tudo certo avisaremos, fique ligado! 😉",
+				icon: "info",
+				confirmButtonText: "Tudo bem",
+			});
+		};
 
 	return (
 		<div className="min-h-screen bg-gradient-to-r from-[#fff0ec] to-[#e6bab6] flex flex-col items-center text-center font-sans">
@@ -55,13 +67,26 @@ export default function Home () {
 
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
-			href="https://vade-estudos-store.vercel.app/"
+			/*href="https://vade-estudos-store.vercel.app/" */
+			rel="noreferrer noopener"
+			target="_blank"
+			onClick = {showAlert}>
+				<button>
+					🛒 Acesse Nossa Loja e Garanta o seu Material de Estudos
+				</button>
+			</a>
+
+			{/*
+			<a 
+			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
+			href="https://chk.eduzz.com/39YBVKOJWO"
 			rel="noreferrer noopener"
 			target="_blank">
 				<button>
-					📚 Garanta o seu Material de Estudos
+					📚 Compre o seu Studies Planner 2025
 				</button>
 			</a>
+			*/}
 
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"  
