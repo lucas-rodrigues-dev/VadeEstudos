@@ -10,9 +10,10 @@ export default function Home () {
 		const showAlert = () => {
 			Swal.fire({
 				title: "👋 Olá Estudante",
-				text: "Obrigado pelo seu interesse em nossos produtos, mas, nossa loja ainda não esta pronta...Quando estiver tudo certo avisaremos, fique ligado! 😉",
+				html: `Obrigado pelo seu interesse em nossos produtos, mas ainda estamos desenvolvendo nossa loja, enquanto isso...<br><br>
+					   <a href="https://chk.eduzz.com/39YBVKOJWO" target="_blank" class="swal2-confirm swal2-styled" rel="noreferrer noopener">Confira o nosso Studies Planner 2025</a>`,
 				icon: "info",
-				confirmButtonText: "Tudo bem",
+				showConfirmButton: false
 			});
 		};
 
@@ -76,7 +77,6 @@ export default function Home () {
 				</button>
 			</a>
 
-			{/*
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
 			href="https://chk.eduzz.com/39YBVKOJWO"
@@ -86,7 +86,6 @@ export default function Home () {
 					📚 Compre o seu Studies Planner 2025
 				</button>
 			</a>
-			*/}
 
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"  
