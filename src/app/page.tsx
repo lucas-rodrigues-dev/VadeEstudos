@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
 import Swal from 'sweetalert2';
-import { Analytics } from "@vercel/analytics/react";
 
 export default function Home () {
-	<Analytics/>
 		const currentYear = new Date().getFullYear();
 
 		// Sweet Alert
