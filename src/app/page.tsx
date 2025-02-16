@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
 import Swal from 'sweetalert2';
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home () {
+	<Analytics/>
 		const currentYear = new Date().getFullYear();
 
 		// Sweet Alert
@@ -12,6 +14,16 @@ export default function Home () {
 				html: `Obrigado pelo seu interesse em nossos produtos, mas ainda estamos desenvolvendo nossa loja, enquanto isso...<br><br>
 					   <a href="https://chk.eduzz.com/39YBVKOJWO" target="_blank" class="swal2-confirm swal2-styled" rel="noreferrer noopener">Confira o nosso Studies Planner 2025</a>`,
 				icon: "info",
+				showConfirmButton: false
+			});
+		};
+
+		const contactAlert = () => {
+			Swal.fire({
+				title: "👋 Olá Estudante",
+				html: `Que ótimo o seu interesse em entrar em contato com nosso time...Abaixo deixarei dois contatos, basta escolher um que em instantes iremos te atender<br><br>
+					   <a href="https://chk.eduzz.com/39YBVKOJWO" target="_blank" class="swal2-confirm swal2-styled" rel="noreferrer noopener">Confira o nosso Studies Planner 2025</a>`,
+				icon: "success",
 				showConfirmButton: false
 			});
 		};
@@ -55,11 +67,13 @@ export default function Home () {
 		{/* Links de Botões */}
 		<div className="w-full flex flex-col items-center">
 			<a 
-			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]">
+			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
+			onClick = {contactAlert}>
 				<button
 					onClick = {() => window.open('https://api.whatsapp.com/send?phone=5561981576620&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20linktree%20e%20tenho%20interesse%20em%20seus%20produtos', '_blank', 'noreferrer noopener')}
+					
 				>
-					👋🏻 Entre em Contato Comigo
+					👋🏻 Entre em Contato Conosco
 				</button>
 			</a>
 
