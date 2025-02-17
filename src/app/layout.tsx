@@ -22,7 +22,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        {/* Outros metadados aqui */}
+        <link rel="icon" href="/VadeEstudosMonitorias.png" sizes="any" />
+        <title>Vade Estudos | Social Linking</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
