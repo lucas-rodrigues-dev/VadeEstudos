@@ -32,42 +32,6 @@ export default function Home () {
 			});
 		};
 
-		const contactAlert = () => {
-			Swal.fire({
-				title: "👋 Olá Estudante",
-				showClass: {
-					popup: `
-						animate__animated
-						animate__fadeInUp
-						animate__faster
-					`
-				},
-				hideClass: {
-					popup: `
-						animate__animated
-						animate__fadeOutDown
-						animate__faster
-					`
-				},
-				html: `
-					Que ótimo o seu interesse em entrar em contato com nosso time...Abaixo deixarei dois contatos, basta escolher um que em instantes iremos te atender 😉<br><br>
-					<a href="https://api.whatsapp.com/send?phone=5561981576620&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20linktree%20e%20tenho%20interesse%20em%20seus%20produtos" target="_blank" rel="noreferrer noopener">
-						<button class="swal2-confirm swal2-styled">
-							Contato 1
-						</button> 
-					 </a>
-					
-					 <a href="https://api.whatsapp.com/send?phone=5561995868908&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20linktree%20e%20tenho%20interesse%20em%20seus%20produtos" target="_blank" rel="noreferrer noopener">
-					 	<button class="swal2-confirm swal2-styled"> 
-							Contato 2
-						</button>
-					 </a>`,
-				icon: "success",
-				showConfirmButton: false,
-				showCloseButton: true
-			});
-		};
-
 	return (
 		<div className="min-h-screen bg-gradient-to-r from-[#fff0ec] to-[#e6bab6] flex flex-col items-center text-center font-sans">
 		{/* Imagem de Cabeçalho */}
@@ -108,7 +72,9 @@ export default function Home () {
 		<div className="w-full flex flex-col items-center">
 			<a 
 			className="w-[70%] bg-none text-black px-4 py-4 my-2 border border-[#8b1c41] rounded-full cursor-pointer font-medium transition-all duration-500 hover:bg-[#80092f] hover:text-[#ffc3d7]"
-			onClick = {contactAlert}>
+			onClick={() => window.open('https://wa.me/5561984392496?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20linktree%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os', '_blank', 'noreferrer noopener')}
+			
+			>
 				<button>
 					👋🏻 Entre em Contato Conosco
 				</button>
