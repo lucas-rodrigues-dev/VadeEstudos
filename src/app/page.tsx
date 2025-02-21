@@ -115,7 +115,7 @@ export default function Home () {
 		</footer>
 
 		<div className="text-black text-[14px] mt-1 font-bold">
-		Desenvolvido com <a
+		Desenvolvido com ❤️ e com <a
 		onClick = {() => window.open('https://nextjs.org/', '_blank', 'noreferrer noopener')}>
 			<Image
 				className="inline-block space-x-1 md:space-x-9 cursor-pointer"
