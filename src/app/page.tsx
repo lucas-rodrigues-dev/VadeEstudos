@@ -123,6 +123,17 @@ export default function Home () {
 				alt="NextJS Logo"
 				width={20}
 				height={10}
+			/> + 
+			</a>
+			
+			<a 
+			onClick = {() => window.open('https://tailwindcss.com/', '_blank', 'noreferrer noopener')}>
+			<Image
+				className="inline-block space-x-1 md:space-x-9 cursor-pointer"
+				src="/tailwind-logo.svg"
+				alt="Tailwind Logo"
+				width={20}
+				height={10}
 			/> por
 			</a>
 			<a 
